@@ -12,12 +12,12 @@
 	   <nav class="tab">
      <a href="./index.html" id="icon_logo"></a> 
 		 <h1 class="logo"><a id="logo1" href="./index.html">HOUSE</a><a id="logo2" href="./index.html">MASTERS</a></h1>
-	        <a id="about" href="">About</a>
-	        <a id="contact" href="./contact.html">Contact</a>
+	        <a id="about" href="./about">About</a>
+	        <a id="contact" href="">Contact</a>
 	   </nav>
 
      <div class="background_alt" style="background-image: url(images/club.jpg)">
-                 <h2>This website wants to be a simple tribute to some of the DJs and Producers who have been at the forefront of House for the past 30+ years. A big 'Thank You' goes to all of them for paving the way into new musical realms and sharing their experience with us on their live performances.</h2>
+                 <h3>info@housemasters.co</h3>
      </div>    
 <footer>
 © 2014 

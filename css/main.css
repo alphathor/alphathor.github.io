@@ -57,10 +57,10 @@ body {
   text-decoration: none;
 }
 #about:hover {
-  color: #FF6600;
+  opacity: .8;
 }
 #contact:hover {
-  color: #FF6600;
+  opacity: .8;
 }
 
 .background {
@@ -124,7 +124,21 @@ opacity: 0.95;
     left: 20%;
     right: 0%;
 }
-
+.share-button {
+	position: absolute;
+    z-index: 500;
+    top: 7%;
+    left: 91%;
+}
+.share-button.sharer-0 label.entypo-export {
+  background: rgba(0,0,0,0.4);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0;
+  padding: 5px 10px;
+}
 footer {
 	position: absolute;
 	bottom: 0;
