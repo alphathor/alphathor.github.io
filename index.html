@@ -195,23 +195,23 @@
 </div>
 
 <script>
-if (document.documentElement.clientWidth >= 600) {
-    config1 = { 
+if (document.documentElement.clientWidth >= 768) {
+    config = { 
       ui: {
     flyout: "bottom left" 
   },
       url: location.href 
     }
-    var share = new Share(".share-button", config1);
+    var share = new Share(".share-button", config);
 }
-if (document.documentElement.clientWidth < 600) {
-    config2 = { 
+if (document.documentElement.clientWidth < 768) {
+    config = { 
       ui: {
     flyout: "bottom center" 
   },
       url: location.href 
     }
-    var share = new Share(".share-button", config2);
+    var share = new Share(".share-button", config);
 }
 </script>
 

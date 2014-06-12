@@ -130,7 +130,7 @@ opacity: 0.95;
     top: 7%;
     right: 1%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 .share-button {
     position: absolute;
     margin-left: auto;
@@ -139,6 +139,9 @@ opacity: 0.95;
     right: 0;
     z-index: 500;
     top: 15%;
+}
+#icon_logo {  
+  display:none;
 }
 }  
 .share-button.sharer-0 label.entypo-export {
