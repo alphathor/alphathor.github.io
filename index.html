@@ -32,7 +32,7 @@
 <body>
 
 	   <nav class="tab">
-     <a href="" id="icon_logo"></a> 
+         <a href="" id="icon_logo"></a> 
 		 <h1 class="logo"><a id="logo1" href="">HOUSE</a><a id="logo2" href="">MASTERS</a></h1>
 	        <a id="about" href="./about">About</a>
 	        <a id="contact" href="./contact">Contact</a>
@@ -195,12 +195,24 @@
 </div>
 
 <script>
-    var share = new Share(".share-button", { 
+if (document.documentElement.clientWidth >= 600) {
+    config1 = { 
       ui: {
     flyout: "bottom left" 
   },
       url: location.href 
-    });
+    }
+    var share = new Share(".share-button", config1);
+}
+if (document.documentElement.clientWidth < 600) {
+    config2 = { 
+      ui: {
+    flyout: "bottom center" 
+  },
+      url: location.href 
+    }
+    var share = new Share(".share-button", config2);
+}
 </script>
 
 <script type="text/javascript">

@@ -128,8 +128,19 @@ opacity: 0.95;
 	position: absolute;
     z-index: 500;
     top: 7%;
-    left: 91%;
+    right: 1%;
 }
+@media screen and (max-width: 600px) {
+.share-button {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    top: 15%;
+}
+}  
 .share-button.sharer-0 label.entypo-export {
   background: rgba(0,0,0,0.4);
   border-radius: 5px;
