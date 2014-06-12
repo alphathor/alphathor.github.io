@@ -130,7 +130,7 @@ opacity: 0.95;
     top: 7%;
     right: 1%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 .share-button {
     position: absolute;
     margin-left: auto;
