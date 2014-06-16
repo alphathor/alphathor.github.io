@@ -352,7 +352,7 @@
 		 * @type {Obejct}
 		 */
 		this.arrows.right = $('<a />', {
-			'href': '#',
+			'href': '',
 			'class': this.options.arrowMainClass + ' ' + this.options.arrowRightClass,
 			// Direction and distance -> One forward
 			'data-distance': '1',
@@ -364,7 +364,7 @@
 		 * @type {Object}
 		 */
 		this.arrows.left = $('<a />', {
-			'href': '#',
+			'href': '',
 			'class': this.options.arrowMainClass + ' ' + this.options.arrowLeftClass,
 			// Direction and distance -> One backward
 			'data-distance': '-1',
