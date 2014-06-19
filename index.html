@@ -244,8 +244,10 @@ if (document.documentElement.clientWidth < 769) {
            var glideapi = $('.slider').glide().data('api_glide');
 //           console.log(glideapi.current()); // read slide number 
            var slide_number = glideapi.current(); // read slide number 
-            if (slide_number == 2)
-              {var slide_hash = "Frankie-Knuckles"}
+            if (slide_number == 1)
+                {var slide_hash = "./"}
+            else if (slide_number == 2)
+                {var slide_hash = "Frankie-Knuckles"}
             else if (slide_number == 3)
                 {var slide_hash = "David-Morales"}
             else if (slide_number == 4)
@@ -273,9 +275,6 @@ if (document.documentElement.clientWidth < 769) {
             else if (slide_number == 15)
                 {var slide_hash = "Detroit-Swindle"}
             history.replaceState({}, '', slide_hash);
-            if (slide_number == 1)
-                {var slide_hash = ""};
-            history.replaceState(null, '',slide_hash);
             // window.location.hash = slide_hash;      
         },
     });
