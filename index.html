@@ -238,7 +238,6 @@ if (document.documentElement.clientWidth < 769) {
     	arrowRightText: '',
 		arrowLeftText: '',
         autoplay: false,
-        animationDuration: 750,
         afterTransition: function() {
            var glideapi = $('.slider').glide().data('api_glide');
 //           console.log(glideapi.current()); // read slide number 
@@ -276,6 +275,7 @@ if (document.documentElement.clientWidth < 769) {
             // window.location.hash = slide_hash;
             history.pushState({}, '', slide_hash);         
         },
+        animationDuration: 750,
     });
 </script>
 	
