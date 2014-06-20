@@ -242,8 +242,6 @@ if (document.documentElement.clientWidth < 769) {
         beforeTransition:
            function() {
            window.addEventListener('popstate', function(event) {
-           var glideapis = $('.slider').glide().data('api_glide');
-           glideapis.prev(console.log('Vado Indietro di 1'));
     if (event.state) {
         console.log("trigger!");
     }
