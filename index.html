@@ -243,7 +243,7 @@ if (document.documentElement.clientWidth < 769) {
            function() {
            window.addEventListener('popstate', function(event) {
             var glideapis = $('.slider').glide().data('api_glide');
-            glideapis.jump(glideapis.current(), console.log('Salto alla slide corrente'));
+            glideapis.jump(1, console.log('Salto alla 1ma slide'));
     if (event.state) {
         console.log("trigger!");
     }
