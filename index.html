@@ -242,13 +242,10 @@ if (document.documentElement.clientWidth < 769) {
         beforeTransition:
            function() {
            window.addEventListener('popstate', function(event) {
-            var glideapis = $('.slider').glide().data('api_glide');
-            glideapis.jump(1, console.log('Salto alla 1ma slide'));
-    if (event.state) {
-        console.log("trigger!");
-    }
-}, false);
-       },
+            var glideapi = $('.slider').glide().data('api_glide');
+            glideapi.jump(1, console.log('Back to 1st slide'));
+            }, false);
+        },
         afterTransition: 
            function() {
            var glideapi = $('.slider').glide().data('api_glide');
@@ -286,7 +283,7 @@ if (document.documentElement.clientWidth < 769) {
                 {var slide_hash = "Detroit-Swindle"}
             history.pushState({}, '', slide_hash);
             // window.location.hash = slide_hash;    
-        },
+           },
     });
 </script>
 	
