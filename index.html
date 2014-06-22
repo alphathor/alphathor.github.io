@@ -234,57 +234,81 @@ if (document.documentElement.clientWidth < 769) {
 </script>
 
 <script type="text/javascript">
-    $('.slider').glide({
-    	arrowRightText: '',
-		arrowLeftText: '',
-        autoplay: false,
-        animationDuration: 800,
-        beforeTransition:
-           function() {
-           window.addEventListener('popstate', function(event) {
+
+//Initializing the slider widget
+$('.slider').glide({
+    arrowRightText: '',
+    arrowLeftText: '',
+    autoplay: false,
+    animationDuration: 800,
+    beforeTransition:
+        function() {
             var glideapi = $('.slider').glide().data('api_glide');
-            glideapi.jump(1, console.log('Back to 1st slide'));
-            }, false);
+            $.housemasters.prev_slide = glideapi.current();
         },
-        afterTransition: 
-           function() {
-           var glideapi = $('.slider').glide().data('api_glide');
-//           console.log(glideapi.current()); // read slide number 
-           var slide_number = glideapi.current(); // read slide number 
-            if (slide_number == 1)
-                {var slide_hash = "./"}
-            else if (slide_number == 2)
-                {var slide_hash = "Frankie-Knuckles"}
-            else if (slide_number == 3)
-                {var slide_hash = "David-Morales"}
-            else if (slide_number == 4)
-                {var slide_hash = "Kerri-Chandler"}
-            else if (slide_number == 5)
-                {var slide_hash = "Tony-Humphries"}
-            else if (slide_number == 6)
-                {var slide_hash = "Louie-Vega"}
-            else if (slide_number == 7)
-                {var slide_hash = "Jay-J"}
-            else if (slide_number == 8)
-                {var slide_hash = "Miguel-Migs"}
-            else if (slide_number == 9)
-                {var slide_hash = "Mark-Farina"}
-            else if (slide_number == 10)
-                {var slide_hash = "Jimpster"}
-            else if (slide_number == 11)
-                {var slide_hash = "Joey-Negro"}
-            else if (slide_number == 12)
-                {var slide_hash = "Richard-Earnshaw"}
-            else if (slide_number == 13)
-                {var slide_hash = "Jamie-Jones"}
-            else if (slide_number == 14)
-                {var slide_hash = "Brawther"}
-            else if (slide_number == 15)
-                {var slide_hash = "Detroit-Swindle"}
-            history.pushState({}, '', slide_hash);
-            // window.location.hash = slide_hash;    
-           },
+    afterTransition: 
+        function() {
+            $.housemasters.pushHistory();
+            $.housemasters.history_flag = false;
+        }
+});
+
+
+$(document).ready(function() {
+    $.housemasters = new Object();
+    $.housemasters.history_flag = false; //Flag used to prevent a new history entry from being made when the slide is changed due to the user pressing the back button
+
+    //List of all the URL hashes to use for each slide
+    $.housemasters.slide_list = {
+        1: "Larry-Levan",
+        2: "Frankie-Knuckles",
+        3: "David-Morales",
+        4: "Kerri-Chandler",
+        5: "Tony-Humphries",
+        6: "Louie-Vega",
+        7: "Jay-J",
+        8: "Miguel-Migs",
+        9: "Mark-Farina",
+        10: "Jimpster",
+        11: "Joey-Negro",
+        12: "Richard-Earnshaw",
+        13: "Jamie-Jones",
+        14: "Brawther",
+        15: "Detroit-Swindle"
+    };
+
+    //Function to add a history entry each time the slide is changed
+    $.housemasters.pushHistory = function() {
+            var glideapi = $('.slider').glide().data('api_glide');
+            var slide_number = glideapi.current();
+            var slide_hash = "#" + $.housemasters.slide_list[slide_number];
+
+            if (!$.housemasters.history_flag)
+                history.pushState({slide: slide_number}, '', slide_hash);
+    }
+
+    //Function called when the user goes back a page(s)
+    $(window).bind('popstate', function(event) {
+        var glideapi = $('.slider').glide().data('api_glide');
+        $.housemasters.history_flag = true;
+        glideapi.jump(event.originalEvent.state.slide);
     });
+
+    //Jump to the slide indicated in the URL
+    var hash = window.location.hash;
+    $.each($.housemasters.slide_list,function(index,value) {
+        var hash = window.location.hash;
+        if (hash == "#" + value) {
+            var glideapi = $('.slider').glide().data('api_glide');
+            glideapi.jump(index);
+            return false;
+        }
+    });
+
+    //Set the initial history entry
+    $.housemasters.pushHistory();
+});
+    
 </script>
 	
 <footer>
