@@ -83,6 +83,7 @@ padding: 0;
 background-size: cover;
 background-position: center;
 position: relative;
+overflow: hidden;
 z-index: 100;
 opacity: 0.95;
 }
@@ -160,11 +161,18 @@ opacity: 0.95;
   display:none;
 }
 .background_alt h2 {
-    font-size: 30px;
+    padding-top: 20%;
+    font-size: 24px;
 }
 .background_alt h3 {
     font-size: 40px;
 }
+.background_alt h4 {
+    font-size: 24px;    
+}
+.background_alt h5 {
+    font-size: 20px;
+}    
 }  
 .share-button.sharer-0 label.entypo-export {
   background: rgba(0,0,0,0.4);
