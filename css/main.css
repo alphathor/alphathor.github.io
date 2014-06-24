@@ -124,6 +124,12 @@ opacity: 0.95;
     left: 20%;
     right: 0%;
 }
+#JotFormIFrame {
+    position: absolute;
+    z-index: 50;
+    top: 10%;
+    left: 20%;
+}
 .share-button {
 	position: absolute;
     z-index: 500;
