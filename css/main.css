@@ -84,7 +84,6 @@ background-size: cover;
 background-position: center;
 position: relative;
 z-index: 100;
-overflow: hidden;
 opacity: 0.95;
 }
 .background h1 {
@@ -99,11 +98,22 @@ opacity: 0.95;
 }
 .background_alt h2 {
     max-height: 100%;
-    padding: 10%;
-    z-index: 50;
-    font-size: 42px;
+    padding: 8%;
+    font-size: 34px;
     text-align: center;
     color: white;
+}
+.background_alt h4 {
+    margin-top: 0;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.background_alt h5 {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    font-style: italic;
 }
 .background_alt h3 {
     position: absolute;
