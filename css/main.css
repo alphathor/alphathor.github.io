@@ -134,14 +134,12 @@ vertical-align: middle;
     left: 20%;
     right: 0%;
 }
-#JotFormIFrame {
+#wufoo-z1kse4ic092x11c {
     position: absolute;
     z-index: 50;
     top: 10%;
     left: 20%;
-    min-width: 60%;
-    min-height: 500px;
-    border: none;
+    width: 60%;
 }
 .share-button {
 	position: absolute;
