@@ -160,6 +160,12 @@ vertical-align: middle;
 #icon_logo {  
   display:none;
 }
+#wufoo-z1kse4ic092x11c {
+    top: 32px;
+    left:0;
+    bottom: 20px;
+    width: 100%;
+}
 }  
 .share-button.sharer-0 label.entypo-export {
   background: rgba(0,0,0,0.4);
