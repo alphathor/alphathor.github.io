@@ -32,6 +32,7 @@ body {
 	margin-left: 5%;
 	font-family: 'Lato', 'Merriweather', sans-serif;
 	font-size: 1em;
+  font-size: 2vw;
 }
 .logo a#logo1 {
 	color: #FF6600; 
@@ -47,6 +48,7 @@ body {
   list-style: none;
   display: inline;
   color:#FFF;
+  font-size: 2vw;
   text-decoration: none;
 }
 #contact {
@@ -54,6 +56,7 @@ body {
   list-style: none;
   display: inline;
   color:#FFF;
+  font-size: 2vw;
   text-decoration: none;
 }
 #about:hover {
