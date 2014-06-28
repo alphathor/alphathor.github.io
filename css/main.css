@@ -86,7 +86,13 @@ position: relative;
 z-index: 100;
 overflow: hidden;
 opacity: 0.95;
+display: table;
 }
+.wrapper {
+display: table-cell;
+vertical-align: middle;  
+}
+
 .background h1 {
     position: absolute;
     z-index: 50;
