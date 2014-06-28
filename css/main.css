@@ -91,6 +91,7 @@ opacity: 0.95;
     position: absolute;
     z-index: 50;
     font-size: 54px;
+    font-size: 5vw;
     text-align: center;
     top: 50%;
     left: 0;
@@ -101,17 +102,20 @@ opacity: 0.95;
     max-height: 100%;
     padding: 8%;
     font-size: 34px;
+    font-size: 3vw;
     text-align: center;
     color: white;
 }
 .background_alt h4 {
     margin-top: 0;
-    font-size: 30px;
+    font-size: 34px;
+    font-size: 3vw;
     text-align: center;
     color: white;
 }
 .background_alt h5 {
-    font-size: 24px;
+    font-size: 26px;
+    font-size: 2.8vw;
     text-align: center;
     color: white;
     font-style: italic;
@@ -151,16 +155,6 @@ opacity: 0.95;
 }
 #icon_logo {  
   display:none;
-}
-.background_alt h2 {
-    padding-top: 20%;
-    font-size: 24px;
-}
-.background_alt h4 {
-    font-size: 24px;    
-}
-.background_alt h5 {
-    font-size: 20px;
 }
 }  
 .share-button.sharer-0 label.entypo-export {
