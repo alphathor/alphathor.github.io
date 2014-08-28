@@ -48,7 +48,10 @@ mixpanel.init("9b3b6354fd54bbc18c5e5ae464e19c97");</script><!-- end Mixpanel -->
          <a href="" id="icon_logo"></a> 
 		 <h1 class="logo"><a id="logo1" href="">HOUSE</a><a id="logo2" href="">MASTERS</a></h1>
 	        <a id="about" href="./about">About</a>
-	        <a id="contact" href="./contact">Contact</a>
+	        <script type="text/javascript">
+               mixpanel.track_links(".tab #about");
+            </script>
+            <a id="contact" href="./contact">Contact</a>
 	   </nav>
 
 <div class="slider">
