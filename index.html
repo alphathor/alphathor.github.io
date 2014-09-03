@@ -47,6 +47,13 @@ mixpanel.init("9b3b6354fd54bbc18c5e5ae464e19c97");</script><!-- end Mixpanel -->
     });
 </script>
 
+<script type="text/javascript">
+mixpanel.track('Page Viewed', {
+    'page name' : document.title,
+    'url' : window.location.pathname
+});
+</script>
+
 <!-- KISSmetrics tracking snippet -->
 <script type="text/javascript">var _kmq = _kmq || [];
 var _kmk = _kmk || '749462c397c9e5d835d359f4a60213c9985255c9';
