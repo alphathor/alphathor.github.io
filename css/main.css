@@ -121,7 +121,10 @@ width: 100%;
 }
 .background_alt h2 {
     max-height: 100%;
-    padding: 8%;
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 4%;
     font-size: 34px;
     font-size: 3vw;
     text-align: center;
@@ -129,14 +132,12 @@ width: 100%;
 }
 .background_alt h4 {
     margin-top: 0;
-    font-size: 28px;
-    font-size: 2.8vw;
+    font-size: 2.7vw;
     text-align: center;
     color: white;
 }
 .background_alt h5 {
-    font-size: 20px;
-    font-size: 2.7vw;
+    font-size: 2.6vw;
     text-align: center;
     color: white;
     font-style: italic;
@@ -209,6 +210,24 @@ footer {
   font-size: 16px;
   margin: 0;
   padding: 5px 10px;
+}
+#slidertext {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right:10%;
+}
+#slider1 {
+  width: 80%;
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  right: 10%;
 }
 footer {
 	position: fixed;
