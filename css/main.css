@@ -50,7 +50,14 @@ body {
   text-decoration: none;
 }
 #contact {
-  margin: 0px;
+  margin-right: 2%;
+  list-style: none;
+  display: inline;
+  color:#FFF;
+  text-decoration: none;
+}
+#timeline {
+  margin-left: 0px;
   list-style: none;
   display: inline;
   color:#FFF;
@@ -60,6 +67,9 @@ body {
   opacity: .8;
 }
 #contact:hover {
+  opacity: .8;
+}
+#timeline:hover {
   opacity: .8;
 }
 .background {
@@ -74,7 +84,7 @@ z-index: 100;
 overflow: hidden;
 opacity: 0.95;
 }
-.background_alt {
+.background_alt {   
 height: 100%;
 width: 100%;
 margin: 0;
@@ -131,6 +141,14 @@ width: 100%;
     color: white;
     font-style: italic;
 }
+.background_alt h6 {
+    max-height: 100%;
+    padding: 0%;
+    font-size: 30px;
+    font-size: 2.8vw;
+    text-align: center;
+    color: white;
+}
 .iframe {
     position: absolute;
     z-index: 50;
@@ -174,6 +192,9 @@ width: 100%;
     font-size: 0.7em;
 }
 #contact {
+    font-size: 0.7em;
+}
+#timeline {
     font-size: 0.7em;
 }
 footer {
